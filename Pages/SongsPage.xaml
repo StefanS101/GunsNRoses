@@ -15,7 +15,7 @@
                 <RowDefinition Height="21*"/>
             </Grid.RowDefinitions>
             <DataGrid Grid.Row="1" IsReadOnly="True"
-               ItemsSource="{Binding songs}"
+               ItemsSource="{Binding Songs}"
                AutoGenerateColumns="True">
 
             </DataGrid>

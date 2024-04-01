@@ -12,13 +12,14 @@
                DockPanel.Dock="Top"/>
             <Frame Source="Pages/SongsPage.xaml" 
                 NavigationUIVisibility="Hidden"
-               x:Name="MainFrame" Height="300px" Width="270"
+               x:Name="MainFrame" Height="153" Width="280"
                 />
             <StackPanel Orientation="Vertical" DockPanel.Dock="Bottom"
-                    Height="300px" Margin="15 15 15 15" Width="100">
+                    Height="101" Margin="15 15 15 15" Width="100">
                 <Button Content="Add song" x:Name="AddSong_Button" 
                      Margin="0 0 0 15"/>
                 <Button Content="Remove song"></Button>
+                <Button Content="Exit" Click="Exit_Click"/>
             </StackPanel>
         </DockPanel>
     </Grid>

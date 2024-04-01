@@ -1,0 +1,21 @@
+﻿<Page x:Class="GunsNRoses.Pages.AddSongPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GunsNRoses.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddSongPage">
+
+    <Grid>
+        <Button Content="Add Song" HorizontalAlignment="Left" Margin="176,253,0,0" VerticalAlignment="Top" Height="40" Width="157" Click="AddSong_Click"/>
+        <Button Content="Return" HorizontalAlignment="Left" Margin="427,253,0,0" VerticalAlignment="Top" Height="40" Width="191" Click="Return_Click"/>
+        <Label Content="Guns 'n' Roses Song" HorizontalAlignment="Left" Height="53" Margin="204,0,0,0" VerticalAlignment="Top" Width="334" FontFamily="Source Serif Pro Semibold" FontSize="36" Cursor="Cross"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="39" Margin="127,94,0,0" VerticalAlignment="Top" Width="139" FontFamily="NSimSun" FontSize="24" Cursor="Cross"/>
+        <Label Content="Album Cover: " HorizontalAlignment="Left" Margin="114,154,0,0" VerticalAlignment="Top" FontFamily="NSimSun" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Margin="298,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Height="28"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="298,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+
+    </Grid>
+</Page>
