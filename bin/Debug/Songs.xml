@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfSong xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Song>
+    <Id>1</Id>
+    <Name>Welcome to the Jungle</Name>
+    <RtfUrl>xxx</RtfUrl>
+    <ImageUrl>yyy</ImageUrl>
+    <CreationTime>02/02/2022</CreationTime>
+  </Song>
+  <Song>
+    <Id>2</Id>
+    <Name>Don't cry</Name>
+    <RtfUrl>xxx</RtfUrl>
+    <ImageUrl>yyy</ImageUrl>
+    <CreationTime>02/02/2022</CreationTime>
+  </Song>
+</ArrayOfSong>

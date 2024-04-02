@@ -75,6 +75,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddSongPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\SongsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -83,6 +87,9 @@
   <ItemGroup>
     <Compile Include="Model\Song.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Pages\AddSongPage.xaml.cs">
+      <DependentUpon>AddSongPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SongsPage.xaml.cs">
       <DependentUpon>SongsPage.xaml</DependentUpon>
     </Compile>

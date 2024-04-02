@@ -3,17 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Vezbe2.Helpers;
 
 
@@ -25,17 +15,32 @@ namespace GunsNRoses
     public partial class MainWindow : Window
     {
         private DataIO serializer = new DataIO();
-        
-        public ObservableCollection<Song> songs;
+
+        public ObservableCollection<Song> Songs;
 
         public Dictionary<string, User> users;
 
         public MainWindow()
         {
-
             InitializeComponent();
+
+            Songs = serializer.DeSerializeObject<ObservableCollection<Song>>("Songs.xml") ?? new ObservableCollection<Song>();
+
         }
 
-        
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            //foreach (Song song in Songs) { serializer.SerializeObject<Song>(song)... }
+            foreach (Song song in Songs) {
+                serializer.SerializeObject<Song>(song,"/songs in rtf files/"+ song.Name + ".rtf");
+            }
+            this.Close();
+        }
+
+        private void AddSong_Button_Click(object sender, RoutedEventArgs e)
+        {
+            String pageUri = "Pages/" + "AddSongPage" + ".xaml";
+            MainFrame.Navigate(new Uri(pageUri, UriKind.RelativeOrAbsolute));
+        }
     }
 }
