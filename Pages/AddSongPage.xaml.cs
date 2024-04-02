@@ -23,5 +23,10 @@ namespace GunsNRoses.Pages
         {
             throw new NotImplementedException();
         }
+
+        private void AddSongButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

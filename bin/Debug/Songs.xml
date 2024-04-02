@@ -7,4 +7,11 @@
     <ImageUrl>yyy</ImageUrl>
     <CreationTime>02/02/2022</CreationTime>
   </Song>
+  <Song>
+    <Id>2</Id>
+    <Name>Don't cry</Name>
+    <RtfUrl>xxx</RtfUrl>
+    <ImageUrl>yyy</ImageUrl>
+    <CreationTime>02/02/2022</CreationTime>
+  </Song>
 </ArrayOfSong>

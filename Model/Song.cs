@@ -10,5 +10,7 @@ namespace GunsNRoses.Model
         public string RtfUrl { get; set; }//referenca na rtf datoteku
         public string ImageUrl { get; set; }
         public string CreationTime { get; set; }
+
+        public bool IsDeleted { get; set; }
     }
 }

@@ -5,20 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GunsNRoses"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="450">
+        Title="MainWindow" Height="300" Width="650">
     <Grid>
         <DockPanel>
             <Label Content="Songs:" FontSize="24"
                DockPanel.Dock="Top"/>
             <Frame Source="Pages/SongsPage.xaml" 
                 NavigationUIVisibility="Hidden"
-               x:Name="MainFrame" Height="153" Width="280"
+               x:Name="MainFrame" Height="153" Width="480"
                 />
             <StackPanel Orientation="Vertical" DockPanel.Dock="Bottom"
                     Height="101" Margin="15 15 15 15" Width="100">
-                <Button Content="Add song" x:Name="AddSong_Button" 
-                     Margin="0 0 0 15"/>
-                <Button Content="Remove song"></Button>
+                <Button Content="Add song"
+                        x:Name="AddSong_Button" 
+                        Margin="0 0 0 15"
+                        Click="AddSong_Button_Click"/>
+                <Button Margin="0 0 0 15" Content="Remove song"></Button>
                 <Button Content="Exit" Click="Exit_Click"/>
             </StackPanel>
         </DockPanel>

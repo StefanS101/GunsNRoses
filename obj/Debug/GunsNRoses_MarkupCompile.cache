@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\DRIVE\hci\GunsNRoses\obj\Debug\
+C:\Users\Stefan\Downloads\GunsNRoses\GunsNRoses\obj\Debug\
 GunsNRoses
 none
 false
 DEBUG;TRACE
-D:\DRIVE\hci\GunsNRoses\App.xaml
-3749047245
+C:\Users\Stefan\Downloads\GunsNRoses\GunsNRoses\App.xaml
+4225851066
 
-10703423588
+11-1409926461
 13-1310406943
-LoginWindow.xaml;MainWindow.xaml;Pages\SongsPage.xaml;
+LoginWindow.xaml;MainWindow.xaml;Pages\AddSongPage.xaml;Pages\SongsPage.xaml;
 
 False
 

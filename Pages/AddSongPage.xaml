@@ -5,17 +5,28 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GunsNRoses.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="153" d:DesignWidth="480"
       Title="AddSongPage">
 
     <Grid>
-        <Button Content="Add Song" HorizontalAlignment="Left" Margin="176,253,0,0" VerticalAlignment="Top" Height="40" Width="157" Click="AddSong_Click"/>
-        <Button Content="Return" HorizontalAlignment="Left" Margin="427,253,0,0" VerticalAlignment="Top" Height="40" Width="191" Click="Return_Click"/>
-        <Label Content="Guns 'n' Roses Song" HorizontalAlignment="Left" Height="53" Margin="204,0,0,0" VerticalAlignment="Top" Width="334" FontFamily="Source Serif Pro Semibold" FontSize="36" Cursor="Cross"/>
-        <Label Content="Name:" HorizontalAlignment="Left" Height="39" Margin="127,94,0,0" VerticalAlignment="Top" Width="139" FontFamily="NSimSun" FontSize="24" Cursor="Cross"/>
-        <Label Content="Album Cover: " HorizontalAlignment="Left" Margin="114,154,0,0" VerticalAlignment="Top" FontFamily="NSimSun" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Margin="298,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Height="28"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="298,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Add Guns 'N' Roses song" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <Label Content="Song name:" Grid.Row="1" />
+        <TextBox Margin=" 3 3 3 3px" Text="" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Album cover:" Grid.Row="2" />
+        <TextBox Margin="3 3 3 3" Text="" Grid.Column="1" Grid.Row="2"/>
+        <Button Width="150px"  Margin="3 3 3 3" Content="Add" Grid.ColumnSpan="2" Grid.Row="3"/>
+
 
     </Grid>
 </Page>

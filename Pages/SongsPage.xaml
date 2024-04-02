@@ -14,10 +14,21 @@
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="21*"/>
             </Grid.RowDefinitions>
-            <DataGrid Grid.Row="1" IsReadOnly="True"
+        <DataGrid Grid.Row="1" IsReadOnly="True"
                ItemsSource="{Binding Songs}"
-               AutoGenerateColumns="True">
-
-            </DataGrid>
-        </Grid>
+               AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                 Header="ID" 
+                 Binding="{Binding ID}"/>
+                <DataGridTextColumn 
+                 Header="Song name" 
+                 Binding="{Binding Name}"/>
+                <DataGridCheckBoxColumn 
+                 Header="Delete" 
+                 Binding="{Binding IsDeleted}"/>
+                      
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
 </Page>
