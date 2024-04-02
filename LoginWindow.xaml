@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GunsNRoses"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
+        Title="LoginWindow" Height="250" Width="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -22,12 +22,16 @@
         <Label Content="Password" Grid.Column="0" Grid.Row="1"/>
 
         <StackPanel Grid.Column="1">
-            <TextBox x:Name="NameTextBox" Text=""/>
+            <TextBox x:Name="NameTextBox" Foreground="Silver"
+                     Text="Input username" GotFocus="NameTextBox_GotFocus"/>
             <Label x:Name="NameErrorLabel" Content=""
                  Foreground="Red"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <TextBox x:Name="PasswordTextBox" Text=""/>
+            <PasswordBox x:Name="PasswordTextBox" 
+                        PasswordChar="*"
+                        
+                         GotFocus="PasswordTextBox_GotFocus"/>
             <Label x:Name="PasswordErrorLabel" Content=""
          Foreground="Red"/>
         </StackPanel>

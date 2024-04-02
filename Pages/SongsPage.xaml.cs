@@ -28,10 +28,10 @@ namespace GunsNRoses.Pages
         {
             InitializeComponent();
 
-            mainWindow = (MainWindow)Application.Current.MainWindow;
+            //mainWindow = (MainWindow)Application.Current.MainWindow;
 
 
-            songs = mainWindow.songs;
+            // = mainWindow.songs;
 
             DataContext = this;
         }

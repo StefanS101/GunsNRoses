@@ -30,12 +30,15 @@ namespace GunsNRoses
 
         public Dictionary<string, User> users;
 
+       
+
         public MainWindow()
         {
 
             InitializeComponent();
+
         }
 
-        
+
     }
 }
